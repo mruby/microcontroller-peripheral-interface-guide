@@ -28,8 +28,9 @@ Additionally, we would like to introduce libraries developed by enthusiastic con
 
 # License
 
-This document, excluding specifically indicated sections, is distributed under the Creative Commons License [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+This document, excluding specifically indicated sections, is distributed under the Creative Commons License CC BY 4.0.
 
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 <a href="https://creativecommons.org/licenses/by/4.0/">
 ![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)
 </a>
