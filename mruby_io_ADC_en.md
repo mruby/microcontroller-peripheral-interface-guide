@@ -59,15 +59,3 @@ Example of use:
 ```ruby
 v1 = adc1.read_raw()
 ```
-
----
-
----
-
----
-
----
-
----
-
----
