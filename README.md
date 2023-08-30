@@ -1,5 +1,3 @@
-# README.md
-
 # About I/O API Guidelines
 
 mruby and mruby/c have released the Common I/O API Guidelines, which enhance program portability across various microcontrollers and improve the reusability of various sensors and I/O control libraries.
