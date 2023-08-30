@@ -36,7 +36,5 @@ This document, excluding specifically indicated sections, is distributed under t
 </a>
 
 Copyright (C) mruby forum commitiee.
-
 Copyright (C) Kyushu Institute of Technology.
-
 Copyright (C) Shimane IT Open-Innovation Center.
