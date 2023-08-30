@@ -28,13 +28,12 @@ Additionally, we would like to introduce libraries developed by enthusiastic con
 
 # License
 
-This document, excluding specifically indicated sections, is distributed under the Creative Commons License CC BY 4.0.
+This document, excluding specifically indicated sections, is distributed under the Creative Commons License [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 <a href="https://creativecommons.org/licenses/by/4.0/">
 ![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)
 </a>
 
-Copyright (C) mruby forum commitiee.
-Copyright (C) Kyushu Institute of Technology.
-Copyright (C) Shimane IT Open-Innovation Center.
+Copyright (C) 2023 mruby forum commitiee.  
+Copyright (C) 2023 Kyushu Institute of Technology.  
+Copyright (C) 2023 Shimane IT Open-Innovation Center.  
