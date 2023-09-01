@@ -4,12 +4,12 @@ mruby and mruby/c have released the Common I/O API Guidelines, which enhance pro
 
 ## About I/O API Classes
 
-GPIO: [Japanese](mruby_io_GPIO_ja.md) / [English](mruby_io_GPIO_en.md)
-ADC: [Japanese](mruby_io_ADC_ja.md) / [English](mruby_io_ADC_en.md)
-PWM: [Japanese](mruby_io_PWM_ja.md) / [English](mruby_io_PWM_en.md)
-UART: [Japanese](mruby_io_UART_ja.md) / [English](mruby_io_UART_en.md)
-I2C: [Japanese](mruby_io_I2C_ja.md) / [English](mruby_io_I2C_en.md) 
-SPI: [Japanese](mruby_io_SPI_ja.md) / [English](mruby_io_SPI_en.md)
+GPIO: [Japanese](mruby_io_GPIO_ja.md) / [English](mruby_io_GPIO_en.md)  
+ADC: [Japanese](mruby_io_ADC_ja.md) / [English](mruby_io_ADC_en.md)  
+PWM: [Japanese](mruby_io_PWM_ja.md) / [English](mruby_io_PWM_en.md)  
+UART: [Japanese](mruby_io_UART_ja.md) / [English](mruby_io_UART_en.md)  
+I2C: [Japanese](mruby_io_I2C_ja.md) / [English](mruby_io_I2C_en.md)   
+SPI: [Japanese](mruby_io_SPI_ja.md) / [English](mruby_io_SPI_en.md)  
 
 # Community-developed Libraries
 
