@@ -2,7 +2,7 @@
 
 mruby and mruby/c have released the Common I/O API Guidelines, which enhance program portability across various microcontrollers and improve the reusability of various sensors and I/O control libraries.
 
-## About I/O API Classes
+# About I/O API Classes
 
 GPIO: [Japanese](mruby_io_GPIO_ja.md) / [English](mruby_io_GPIO_en.md)  
 ADC: [Japanese](mruby_io_ADC_ja.md) / [English](mruby_io_ADC_en.md)  
