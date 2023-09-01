@@ -2,9 +2,18 @@
 
 mruby and mruby/c have released the Common I/O API Guidelines, which enhance program portability across various microcontrollers and improve the reusability of various sensors and I/O control libraries.
 
+## About I/O API Classes
+
+GPIO: [Japanese](mruby_io_GPIO_ja.md) / [English](mruby_io_GPIO_en.md)
+ADC: [Japanese](mruby_io_ADC_ja.md) / [English](mruby_io_ADC_en.md)
+PWM: [Japanese](mruby_io_PWM_ja.md) / [English](mruby_io_PWM_en.md)
+UART: [Japanese](mruby_io_UART_ja.md) / [English](mruby_io_UART_en.md)
+I2C: [Japanese](mruby_io_I2C_ja.md) / [English](mruby_io_I2C_en.md) 
+SPI: [Japanese](mruby_io_SPI_ja.md) / [English](mruby_io_SPI_en.md)
+
 # Community-developed Libraries
 
-Additionally, we would like to introduce libraries developed by enthusiastic contributors for MCUs that have been made available. If there are MCU libraries not listed below and you have created your own, we encourage you to inform us through the inquiry so that we can include it in our introductions.
+Additionally, we would like to introduce libraries developed by enthusiastic contributors for MCUs that have been made available. If there are MCU libraries not listed below and you have created your own, we encourage you to inform us through the inquiry so that we can include it in our introductions.This section is not covered by the License of this Guideline, and you should follow the guidelines of each developer.
 
 ## mruby
 
@@ -24,7 +33,7 @@ Additionally, we would like to introduce libraries developed by enthusiastic con
 
 ### ESP32
 
-[mrubyc-esp32](https://github.com/gfd-dennou-club/mrubyc-esp32) by [sugiymki](http://sugiymki)
+[mrubyc-esp32](https://github.com/gfd-dennou-club/mrubyc-esp32) by [sugiymki](https://github.com/sugiymki)
 
 # License
 
