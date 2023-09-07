@@ -33,7 +33,7 @@ Additionally, we would like to introduce libraries developed by enthusiastic con
 
 ### ESP32
 
-[mrubyc-esp32](https://github.com/gfd-dennou-club/mrubyc-esp32) by [gfd-dennou-club](https://github.com/gfd-dennou-club)[(sugiymki)](https://github.com/sugiymki)
+[mrubyc-esp32](https://github.com/gfd-dennou-club/mrubyc-esp32) by [gfd-dennou-club](https://github.com/gfd-dennou-club)([sugiymki)](https://github.com/sugiymki))
 
 # License
 
