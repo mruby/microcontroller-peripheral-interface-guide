@@ -19,7 +19,7 @@ Additionally, we would like to introduce libraries developed by enthusiastic con
 
 ### ESP32
 
-[mruby-esp32](https://github.com/yuuu/mruby-esp32) by [yuuu](https://github.com/yuuu)
+[mruby-esp32](https://github.com/yuuu/mruby-esp32) 
 
 ## mruby/c
 
