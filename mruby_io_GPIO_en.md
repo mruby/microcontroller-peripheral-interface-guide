@@ -34,7 +34,7 @@ GPIO.setmode( "B1", GPIO::IN|GPIO::PULL_UP )
 Example of use:
 
 ```ruby
-GPIO.new( 1, GPIO::IN )
+GPIO.setmode( 1, GPIO::IN )
 v1 = GPIO.read_at( 1 )          # read from pin 1.
 ```
 
@@ -73,8 +73,8 @@ if GPIO.low_at?( 1 )
 Example of use:
 
 ```ruby
-GPIO.new( 1, GPIO::OUT )
-v1 = GPIO.write_at( 1, 0 )      # output zero to pin 1.
+GPIO.setmode( 1, GPIO::OUT )
+GPIO.write_at( 1, 0 )      # output zero to pin 1.
 ```
 
 ---
