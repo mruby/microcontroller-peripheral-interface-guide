@@ -5,7 +5,6 @@
 
 ## Constructor
 
----
 
 ### ADC.new( pin, *params )
 
@@ -24,7 +23,6 @@ adc1 = ADC.new( 1 )
 
 ## Instance Method
 
----
 
 ### read_voltage() -> Float
 

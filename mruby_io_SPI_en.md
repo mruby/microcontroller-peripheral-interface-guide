@@ -6,9 +6,8 @@
 
 ---
 
-## **Constructor**
+## Constructor
 
----
 
 ### SPI.new( id=nil, *params )
 
@@ -40,9 +39,8 @@ Device-specific
 
 ---
 
-## **Instance Methods**
+## Instance Methods
 
----
 
 ### setmode( *params )
 
@@ -59,7 +57,7 @@ spi.setmode( mode:3 )
 
 ### read( read_bytes ) -> String
 
-- Reads data of **`read_bytes`** bytes from the SPI bus.
+- Reads data of `read_bytes` bytes from the SPI bus.
 - At the same time, data will be output as 0.
 
 Example of use:
@@ -72,8 +70,8 @@ data = spi.read( 32 )
 
 ### write( *outputs ) -> nil
 
-- Outputs data specified in **`outputs`** to the SPI bus.
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
+- Outputs data specified in `outputs` to the SPI bus.
+- `outputs` can be specified as an Integer, Array<Integer>, or String.
 
 Example of use:
 
@@ -87,9 +85,9 @@ i2c.write( 0x02, 0xee, 0xad, 0x00, data_string )  # useful for EEPROM
 
 ### transfer( outputs, additional_read_bytes = 0 ) -> String
 
-- Outputs data specified in **`outputs`** to the SPI bus while simultaneously reading data (General-purpose transfer).
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
-- If **`additional_read_bytes`** is specified, it will output 0x00 after the **`outputs`**.
+- Outputs data specified in `outputs` to the SPI bus while simultaneously reading data (General-purpose transfer).
+- `outputs` can be specified as an Integer, Array<Integer>, or String.
+- If `additional_read_bytes` is specified, it will output 0x00 after the `outputs`.
 
 Example of use:
 

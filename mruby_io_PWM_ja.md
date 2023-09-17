@@ -6,7 +6,6 @@
 
 ## コンストラクタ
 
----
 
 ### PWM.new( pin, *params )
 
@@ -41,7 +40,6 @@ pwm1 = PWM.new( 1, frequency:440, duty:30 )
 
 ## インスタンスメソッド
 
----
 
 ### frequency( freq )
 

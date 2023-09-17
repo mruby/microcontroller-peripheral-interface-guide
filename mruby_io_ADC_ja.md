@@ -7,7 +7,6 @@
 
 ## コンストラクタ
 
----
 
 ### ADC.new( pin, *params )
 
@@ -26,7 +25,6 @@ adc1 = ADC.new( 1 )
 
 ## インスタンスメソッド
 
----
 
 ### read_voltage() -> Float
 

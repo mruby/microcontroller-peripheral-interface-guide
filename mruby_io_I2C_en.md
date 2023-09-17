@@ -5,9 +5,8 @@
 
 ---
 
-## **Constructor**
+## Constructor
 
----
 
 ### I2C.new( id=nil, *params )
 
@@ -39,16 +38,15 @@ Device-specific
 
 ---
 
-## **Instance Methods**
+## Instance Methods
 
----
 
 ### read( i2c_adrs_7, read_bytes, *param ) -> String
 
-- Reads data of **`read_bytes`** bytes from the device with the address **`i2c_adrs_7`**.
-- If the device returns NAK in the middle, a String of shorter length than **`read_bytes`** may be returned.
-- If data is specified in the **`param`**, it will be output before the repeated start, and then reading will start.
-- Output specifications are the same as for **`write()`**.
+- Reads data of `read_bytes` bytes from the device with the address `i2c_adrs_7`.
+- If the device returns NAK in the middle, a String of shorter length than `read_bytes` may be returned.
+- If data is specified in the `param`, it will be output before the repeated start, and then reading will start.
+- Output specifications are the same as for `write()`.
 
 Example of use:
 
@@ -75,9 +73,9 @@ I2C bus sequence
 
 ### write( i2c_adrs_7 , *outputs ) -> Integer
 
-- Writes data specified in **`outputs`** to the device with the address **`i2c_adrs_7`**.
+- Writes data specified in `outputs` to the device with the address `i2c_adrs_7`.
 - The number of bytes successfully written is returned as the return value.
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
+- `outputs` can be specified as an Integer, Array<Integer>, or String.
 
 Example of use:
 
@@ -138,8 +136,8 @@ i2c.send_stop
 
 ### raw_read( read_bytes, ack_nack = false ) -> String
 
-- Reads **`read_bytes`** bytes from the I2C bus and returns them.
-- **`ack_nack = true`** outputs ACK at the last byte reading, and **`false`** outputs NACK.
+- Reads `read_bytes` bytes from the I2C bus and returns them.
+- `ack_nack = true` outputs ACK at the last byte reading, and `false` outputs NACK.
 
 Example of use:
 
@@ -151,9 +149,9 @@ str = i2c.raw_read( 20 )
 
 ### raw_write( *outputs ) -> Integer
 
-- Writes data specified in **`outputs`** to the I2C bus.
+- Writes data specified in `outputs` to the I2C bus.
 - The number of bytes successfully written is returned as the return value.
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
+- `outputs` can be specified as an Integer, Array<Integer>, or String.
 
 Example of use:
 

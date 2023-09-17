@@ -7,7 +7,6 @@
 
 ## クラスメソッド
 
----
 
 ### GPIO.setmode( pin, params ) -> nil
 
@@ -81,7 +80,6 @@ GPIO.write_at( 1, 0 )      # output zero to pin 1.
 
 ## コンストラクタ
 
----
 
 ### GPIO.new( pin, params )
 
@@ -117,7 +115,6 @@ gpio1 = GPIO.new( "B1", GPIO::IN|GPIO::PULL_UP )
 
 ## インスタンスメソッド
 
----
 
 ### read() -> Integer
 

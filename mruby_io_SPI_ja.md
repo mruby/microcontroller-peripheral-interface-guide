@@ -8,7 +8,6 @@
 
 ## コンストラクタ
 
----
 
 ### SPI.new( id=nil, *params )
 
@@ -42,7 +41,6 @@ spi = SPI.new( unit:1, frequency:10_000_000 )
 
 ## インスタンスメソッド
 
----
 
 ### setmode( *params )
 
