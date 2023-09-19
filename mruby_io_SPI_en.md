@@ -1,18 +1,17 @@
 # SPI
 
-- A class that supports `SPI` bus.
+- A class that supports SPI bus.
 - This specification defines only master devices and transfers in 8-bit units.
-- The Chip Select (CS/SS) will be managed using `GPIO` functionality and is not defined within the `SPI` class.
+- The Chip Select (CS/SS) will be managed using GPIO functionality and is not defined within the SPI class.
 
 ---
 
-## **Constructor**
+## Constructor
 
----
 
 ### SPI.new( id=nil, *params )
 
-- Generates an `SPI` object by specifying the physical unit indicated by "id."
+- Generates an SPI object by specifying the physical unit indicated by "id."
 - "id" can be omitted when there is only one physical unit.
 
 Optional Parameters
@@ -40,13 +39,12 @@ Device-specific
 
 ---
 
-## **Instance Methods**
+## Instance Methods
 
----
 
 ### setmode( *params )
 
-- Changes the operating mode (parameters) of the `SPI`.
+- Changes the operating mode (parameters) of the SPI.
 - The parameters are specified according to the constructor.
 
 Example of use:
@@ -59,7 +57,7 @@ spi.setmode( mode:3 )
 
 ### read( read_bytes ) -> String
 
-- Reads data of **`read_bytes`** bytes from the SPI bus.
+- Reads data of read_bytes bytes from the SPI bus.
 - At the same time, data will be output as 0.
 
 Example of use:
@@ -72,8 +70,8 @@ data = spi.read( 32 )
 
 ### write( *outputs ) -> nil
 
-- Outputs data specified in **`outputs`** to the SPI bus.
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
+- Outputs data specified in outputs to the SPI bus.
+- outputs can be specified as an Integer, Array<Integer>, or String.
 
 Example of use:
 
@@ -87,9 +85,9 @@ i2c.write( 0x02, 0xee, 0xad, 0x00, data_string )  # useful for EEPROM
 
 ### transfer( outputs, additional_read_bytes = 0 ) -> String
 
-- Outputs data specified in **`outputs`** to the SPI bus while simultaneously reading data (General-purpose transfer).
-- **`outputs`** can be specified as an Integer, Array<Integer>, or String.
-- If **`additional_read_bytes`** is specified, it will output 0x00 after the **`outputs`**.
+- Outputs data specified in outputs to the SPI bus while simultaneously reading data (General-purpose transfer).
+- outputs can be specified as an Integer, Array<Integer>, or String.
+- If additional_read_bytes is specified, it will output 0x00 after the outputs.
 
 Example of use:
 

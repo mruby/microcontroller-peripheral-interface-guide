@@ -6,7 +6,6 @@
 
 ## コンストラクタ
 
----
 
 ### UART.new( id=nil, *params )
 
@@ -61,7 +60,6 @@ uart2 = UART.new("/dev/cu.usbserial1", baud:19200, parity:UART::EVEN )
 
 ## インスタンスメソッド
 
----
 
 ### setmode( *params )
 

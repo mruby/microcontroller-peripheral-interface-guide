@@ -4,13 +4,12 @@
 
 ---
 
-## **Constructor**
+## Constructor
 
----
 
 ### UART.new( id=nil, *params )
 
-- Generates a `UART` object by specifying the physical unit indicated by "id."
+- Generates a UART object by specifying the physical unit indicated by "id."
 - The default parameter values follow the settings below if possible.
     - Baud rate: 9600
     - Data bits: 8 bits
@@ -59,13 +58,12 @@ Device-specific
 
 ---
 
-## **Instance Methods**
+## Instance Methods
 
----
 
 ### setmode( *params )
 
-- Changes the mode (parameters) of `UART`.
+- Changes the mode (parameters) of UART.
 - The parameter specification follows that of the constructor.
 
 Example of use:
@@ -78,7 +76,7 @@ uart1.setmode( bardrate:38400 )
 
 ### read( read_bytes ) -> String
 
-- Reads data of the specified number of bytes, **`read_bytes`**.
+- Reads data of the specified number of bytes, read_bytes.
 - If the specified number of bytes has not arrived, it will block until they arrive.
 
 Example of use:
@@ -89,7 +87,7 @@ val = uart1.read( 10 )
 
 Note
 
-- If you do not want to block, you can check the number of bytes that can be read in advance using the **`bytes_available`** method.
+- If you do not want to block, you can check the number of bytes that can be read in advance using the bytes_available method.
 
 ---
 
@@ -124,14 +122,14 @@ val = uart1.gets()
 
 Note
 
-- If you do not want to block, you can check if reading a line is possible in advance using the **`can_read_line`** method.
-- The maximum character length depends on the size of the read buffer. If the buffer becomes full with data that does not contain a newline character, it will not be possible to read using **`gets`**.
+- If you do not want to block, you can check if reading a line is possible in advance using the can_read_line method.
+- The maximum character length depends on the size of the read buffer. If the buffer becomes full with data that does not contain a newline character, it will not be possible to read using gets.
 
 ---
 
 ### puts( string ) -> nil
 
-- Sends one line and sends a newline code at the end of the argument **`string`**.
+- Sends one line and sends a newline code at the end of the argument string.
 - The newline code is LF only by default.
 
 Example of use:
@@ -221,7 +219,7 @@ uart1.clear_tx_buffer()
 ### send_break( time )
 
 - Sends a break signal.
-- The **`time`** is optional and specified in seconds.
+- The time is optional and specified in seconds.
 
 Example of use:
 
@@ -231,4 +229,4 @@ uart1.send_break( 0.1 )
 
 Device-specific
 
-- Depending on the hardware, **`time`** may be fixed (e.g., 12 bits) and cannot be changed.
+- Depending on the hardware, time may be fixed (e.g., 12 bits) and cannot be changed.

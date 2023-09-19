@@ -7,11 +7,10 @@
 
 ## Class method
 
----
 
 ### GPIO.setmode( pin, params ) -> nil
 
-- Specify the physical pin indicated by "pin" and change the mode of the `GPIO`.
+- Specify the physical pin indicated by "pin" and change the mode of the GPIO.
 - Refer to the constructor for other information.
 
 Example of use:
@@ -34,7 +33,7 @@ GPIO.setmode( "B1", GPIO::IN|GPIO::PULL_UP )
 Example of use:
 
 ```ruby
-GPIO.new( 1, GPIO::IN )
+GPIO.setmode( 1, GPIO::IN )
 v1 = GPIO.read_at( 1 )          # read from pin 1.
 ```
 
@@ -73,19 +72,18 @@ if GPIO.low_at?( 1 )
 Example of use:
 
 ```ruby
-GPIO.new( 1, GPIO::OUT )
-v1 = GPIO.write_at( 1, 0 )      # output zero to pin 1.
+GPIO.setmode( 1, GPIO::OUT )
+GPIO.write_at( 1, 0 )      # output zero to pin 1.
 ```
 
 ---
 
 ## Constructor
 
----
 
 ### GPIO.new( pin, params )
 
-- Specify the physical pin indicated by the pin and generate a `GPIO` object.
+- Specify the physical pin indicated by the pin and generate a GPIO object.
 - At the same time, specify a param to indicate the mode, such as input/output direction.
 - The pin is typically specified as an integer, but other methods (such as "B1" in PIC) may be used.
 - Although one bit is the basic unit, pin specification that combines multiple bits may be necessary depending on the device.
@@ -117,7 +115,6 @@ gpio1 = GPIO.new("B1", GPIO::IN|GPIO::PULL_UP)
 
 ## Instance methods
 
----
 
 ### read() -> Integer
 
@@ -172,7 +169,7 @@ gpio1.write( 1 )
 
 ### setmode( param ) -> nil
 
-- Change the `GPIO` mode at any timing.
+- Change the GPIO mode at any timing.
 - When IN, OUT, or HIGH_Z is specified while PULL_UP or other settings have already been set, the previous settings will be invalidated.
 
 Example of use:

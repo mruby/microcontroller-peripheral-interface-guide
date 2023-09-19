@@ -7,7 +7,6 @@
 
 ## コンストラクタ
 
----
 
 ### I2C.new( id=nil, *params )
 
@@ -41,7 +40,6 @@ i2c = I2C.new(1, frequency:400_000 )   # 400kHz
 
 ## インスタンスメソッド
 
----
 
 ### read( i2c_adrs_7, read_bytes, *param ) -> String
 
