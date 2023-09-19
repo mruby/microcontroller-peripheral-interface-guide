@@ -1,6 +1,6 @@
 # PWM
 
-- A class that supports Pulse Width Modulation (`PWM`) functionality.
+- A class that supports Pulse Width Modulation (PWM) functionality.
 
 ---
 
@@ -11,8 +11,8 @@
 
 - Generate a PWM object by specifying the physical pin indicated by "pin."
 - Typically, "pin" is specified as an integer, but alternative methods (e.g., "B1" in PIC) are also acceptable.
-- When specifying the parameter `frequency`, the output starts with a duty cycle of 50%.
-- If you want to start the output with a duty cycle other than 50%, specify the parameter `duty` simultaneously.
+- When specifying the parameter frequency, the output starts with a duty cycle of 50%.
+- If you want to start the output with a duty cycle other than 50%, specify the parameter duty simultaneously.
 
 Optional Parameters
 

@@ -10,7 +10,7 @@
 
 ### GPIO.setmode( pin, params ) -> nil
 
-- Specify the physical pin indicated by "pin" and change the mode of the `GPIO`.
+- Specify the physical pin indicated by "pin" and change the mode of the GPIO.
 - Refer to the constructor for other information.
 
 Example of use:
@@ -83,7 +83,7 @@ GPIO.write_at( 1, 0 )      # output zero to pin 1.
 
 ### GPIO.new( pin, params )
 
-- Specify the physical pin indicated by the pin and generate a `GPIO` object.
+- Specify the physical pin indicated by the pin and generate a GPIO object.
 - At the same time, specify a param to indicate the mode, such as input/output direction.
 - The pin is typically specified as an integer, but other methods (such as "B1" in PIC) may be used.
 - Although one bit is the basic unit, pin specification that combines multiple bits may be necessary depending on the device.
@@ -169,7 +169,7 @@ gpio1.write( 1 )
 
 ### setmode( param ) -> nil
 
-- Change the `GPIO` mode at any timing.
+- Change the GPIO mode at any timing.
 - When IN, OUT, or HIGH_Z is specified while PULL_UP or other settings have already been set, the previous settings will be invalidated.
 
 Example of use:

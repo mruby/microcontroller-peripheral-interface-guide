@@ -1,6 +1,6 @@
 # ADC
 
-- A class that supports Analog-to-Digital Conversion (`ADC`) functionality.
+- A class that supports Analog-to-Digital Conversion (ADC) functionality.
 - Generally, it is capable of converting analog voltage values to digital values.
 
 ## Constructor
@@ -8,7 +8,7 @@
 
 ### ADC.new( pin, *params )
 
-- Generate an `ADC` object by specifying the physical pin indicated by "pin."
+- Generate an ADC object by specifying the physical pin indicated by "pin."
 - Typically, "pin" is specified as an integer, but alternative methods (e.g., "B1" in PIC) are also acceptable.
 - If the device has a switch between analog and digital modes for the pin, it will be switched to analog mode at this point.
 - Generally, there is no need to specify additional parameters, such as "params." However, for certain models that require additional feature specifications like sampling speed, they can be specified here.
