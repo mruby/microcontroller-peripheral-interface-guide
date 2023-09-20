@@ -2,6 +2,8 @@
 
 - A class that supports I2C bus.
 - This specification supports only master devices with 7-bit addresses.
+- Define two types of methods: convenience methods, which are easy to use, and low-level methods, which provide detailed control.
+- The low-level methods should be implemented on an as-needed basis, since it is unlikely that they will be needed in most cases.
 
 ---
 
@@ -100,6 +102,7 @@ S -- adrs W A -- data_1 A -- ... -- data_n N -- P
 
 ### send_start()
 
+- Low level method.
 - Outputs a StartCondition to the I2C bus.
 
 Example of use:
@@ -112,7 +115,8 @@ i2c.send_start
 
 ### send_restart()
 
-- Outputs a RestartCondition to the I2C bus.
+- Low level method.
+- Outputs a Restart (RepeatedStart) Condition to the I2C bus.
 
 Example of use:
 
@@ -124,6 +128,7 @@ i2c.send_restart
 
 ### send_stop()
 
+- Low level method.
 - Outputs a StopCondition to the I2C bus.
 
 Example of use:
@@ -136,6 +141,7 @@ i2c.send_stop
 
 ### raw_read( read_bytes, ack_nack = false ) -> String
 
+- Low level method.
 - Reads read_bytes bytes from the I2C bus and returns them.
 - ack_nack = true outputs ACK at the last byte reading, and false outputs NACK.
 
@@ -149,6 +155,7 @@ str = i2c.raw_read( 20 )
 
 ### raw_write( *outputs ) -> Integer
 
+- Low level method.
 - Writes data specified in outputs to the I2C bus.
 - The number of bytes successfully written is returned as the return value.
 - outputs can be specified as an Integer, Array<Integer>, or String.
@@ -156,5 +163,5 @@ str = i2c.raw_read( 20 )
 Example of use:
 
 ```ruby
-i2c.write( 0x45, 0x30, 0xa2 )
+i2c.raw_write( 0x45, 0x30, 0xa2 )
 ```

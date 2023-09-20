@@ -2,6 +2,8 @@
 
 - I2C バスをサポートするクラス。
 - この仕様書ではマスターデバイス、7ビットアドレスのみをサポートしている。
+- 容易に使う事ができるコンビニエンスメソッドと、細かな制御ができる低レベルメソッドを定義する。
+- 低レベルメソッドは、ほとんどの場合必要ないと思われるので、必要に応じて実装すれば良い。
 
 ---
 
@@ -100,6 +102,7 @@ S -- adrs W A -- data_1 A -- ... -- data_n N -- P
 
 ### send_start()
 
+- Low level method.
 - I2Cバスに StartCondition を出力する。
 
 使用例
@@ -112,7 +115,8 @@ i2c.send_start
 
 ### send_restart()
 
-- I2Cバスに RestartCondition を出力する。
+- Low level method.
+- I2Cバスに Restart (RepeatedStart) Condition を出力する。
 
 使用例
 
@@ -124,6 +128,7 @@ i2c.send_restart
 
 ### send_stop()
 
+- Low level method.
 - I2Cバスに StopCondition を出力する。
 
 使用例
@@ -136,6 +141,7 @@ i2c.send_stop
 
 ### raw_read( read_bytes, ack_nack = false ) -> String
 
+- Low level method.
 - I2Cバスから read_bytes バイト読み込んで返す。
 - ack_nack = true で最後のバイト読み込み時に ACK を、false で NACK 出力する。
 
@@ -149,6 +155,7 @@ str = i2c.raw_read( 20 )
 
 ### raw_write( *outputs ) -> Integer
 
+- Low level method.
 - I2Cバスへ outputs で指定したデータを書き込む。
 - 書き込みできたバイト数が戻り値として返る。
 - outputsは、Integer, Array\<Integer\> および String で指定する。
@@ -156,5 +163,5 @@ str = i2c.raw_read( 20 )
 使用例
 
 ```ruby
-i2c.write( 0x45, 0x30, 0xa2 )
+i2c.raw_write( 0x45, 0x30, 0xa2 )
 ```
