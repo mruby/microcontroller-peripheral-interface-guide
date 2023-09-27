@@ -69,7 +69,7 @@ Device-specific
 Example of use:
 
 ```ruby
-uart1.setmode( bardrate:38400 )
+uart1.setmode( baudrate:38400 )
 ```
 
 ---
@@ -182,7 +182,7 @@ flag = uart1.can_read_line()
 
 ### flush()
 
-- Returns true if reading a line of data is possible.
+- Block until transmission of data accumulated in the transmission buffer is completed.
 
 Example of use:
 

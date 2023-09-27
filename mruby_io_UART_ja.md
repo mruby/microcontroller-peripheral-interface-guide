@@ -69,7 +69,7 @@ uart2 = UART.new("/dev/cu.usbserial1", baud:19200, parity:UART::EVEN )
 実行例
 
 ```ruby
-uart1.setmode( bardrate:38400 )
+uart1.setmode( baudrate:38400 )
 ```
 
 ---
