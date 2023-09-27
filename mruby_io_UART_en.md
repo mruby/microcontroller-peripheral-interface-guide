@@ -69,7 +69,7 @@ Device-specific
 Example of use:
 
 ```ruby
-uart1.setmode( bardrate:38400 )
+uart1.setmode( baudrate:38400 )
 ```
 
 ---
