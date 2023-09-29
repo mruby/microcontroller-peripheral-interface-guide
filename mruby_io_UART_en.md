@@ -99,7 +99,7 @@ Note
 Example of use:
 
 ```ruby
-uart1.write("Output string\\r\\n")
+uart1.write("Output string\r\n")
 ```
 
 Device-specific
