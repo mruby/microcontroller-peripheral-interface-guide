@@ -99,7 +99,7 @@ val = uart1.read( 10 )
 実行例
 
 ```ruby
-uart1.write("Output string\\r\\n")
+uart1.write("Output string\r\n")
 ```
 
 機種依存
