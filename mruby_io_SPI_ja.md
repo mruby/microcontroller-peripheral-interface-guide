@@ -33,6 +33,16 @@ spi = SPI.new()
 spi = SPI.new( unit:1, frequency:10_000_000 )
 ```
 
+モードパラメータ
+
+| mode | CPOL | CPHA | Idle state clock polarity | Sampling timming | |
+|:----:|:----:|:----:|:-------------------------:|:----------------:|-|
+|   0  |  0   |  0   | Low                       | Rising edge      |![mode0](img/spi_mode0.png)|
+|   1  |  0   |  1   | Low                       | Falling edge     |![mode1](img/spi_mode1.png)|
+|   2  |  1   |  0   | High                      | Falling edge     |![mode2](img/spi_mode2.png)|
+|   3  |  1   |  1   | High                      | Rising edge      |![mode3](img/spi_mode3.png)|
+
+
 機種依存
 
 - 全てのパラメータがサポートされているとは限らない。
