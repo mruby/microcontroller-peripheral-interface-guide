@@ -60,8 +60,8 @@ s = i2c.read( 0x45, 3, 0xf3, 0x2d )     # case 2
 I2C bus sequence
 
 ```
-(case 1) S -- adrs(45) R A -- data1 A -- ... -- data3 A|N -- P
-(case 2) S -- adrs(45) W A -- out1(f3) A ... out2(2d) A -- Sr -- adrs(45) R A -- data1 A -- ... data3 N -- P
+(case 1) S -- adrs(45) R A -- data1 A -- data2 A -- data3 A|N -- P
+(case 2) S -- adrs(45) W A -- out1(f3) A -- out2(2d) A -- Sr -- adrs(45) R A -- data1 A -- data2 A -- data3 N -- P
     S : Start condition
     P : Stop condition
     Sr: Repeated start condition
