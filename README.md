@@ -46,6 +46,6 @@ This document, excluding specifically indicated sections, is distributed under t
 ![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)
 </a>
 
-Copyright (C) 2023 mruby forum commitiee.  
+Copyright (C) 2023 mruby forum committee.  
 Copyright (C) 2023 Kyushu Institute of Technology.  
 Copyright (C) 2023 Shimane IT Open-Innovation Center.  
