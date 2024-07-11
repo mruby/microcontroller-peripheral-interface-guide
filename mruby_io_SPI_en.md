@@ -21,7 +21,7 @@ Optional Parameters
 | unit | --- | Specification of the SPI unit |
 | frequency | Integer | Frequency (default 1MHz) |
 | mode | Integer | 0 to 3 (default 0) |
-| first_bit | Constant | SPI::MSB_FIRST | SPI::LSB_FIRST (default MSB_FIRST) |
+| first_bit | Constant | SPI::MSB_FIRST or SPI::LSB_FIRST (default MSB_FIRST) |
 
 Example of use:
 
