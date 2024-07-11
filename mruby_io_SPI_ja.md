@@ -21,7 +21,7 @@
 | unit | --- | SPIユニットの指定 |
 | frequency | Integer | 周波数 (default 1MHz) |
 | mode | Integer | 0 to 3 (default 0) |
-| first_bit | Constant | SPI::MSB_FIRST | SPI::LSB_FIRST (default MSB_FIRST) |
+| first_bit | Constant | SPI::MSB_FIRST or SPI::LSB_FIRST (default MSB_FIRST) |
 
 使用例
 
