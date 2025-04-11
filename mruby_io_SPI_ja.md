@@ -88,7 +88,7 @@ data = spi.read( 32 )
 ```ruby
 spi.write( 0x30, 0xa2 )
 spi.write( "\x30\xa2" )
-i2c.write( 0x02, 0xee, 0xad, 0x00, data_string )  # useful for EEPROM
+spi.write( 0x02, 0xee, 0xad, 0x00, data_string )  # useful for EEPROM
 ```
 
 ---
